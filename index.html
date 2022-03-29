@@ -16,21 +16,21 @@
                     link.text = `Section ${i}`
                     nav.appendChild(link)
                 }
-                nav.removeChild(nav.querySelector("script"))
+                //nav.removeChild(nav.querySelector("script"))
             </script><a href="contact.html">Contact</a>
         </nav>
+        <hr>
         <main>
             <script>                
                 const main = document.querySelector("main")
-                console.log(main.children)
                 for (let i = 1; i<= 4; i++) {
                     const section = document.createElement("section")
                     section.id = `section${i}`
+                    section.setAttribute("data-spy", "test")
                     section.textContent = `Section ${i}`
                     main.appendChild(section)
-                   
                 }
-                main.removeChild(main.querySelector("script"))
+                //main.removeChild(main.querySelector("script"))
             </script>
         </main>
     </body>

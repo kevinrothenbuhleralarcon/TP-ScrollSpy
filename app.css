@@ -48,13 +48,13 @@ nav a:hover {
 }
 
 section {
+    background-color: #edf2f7;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     min-height: 100vh;
 }
-
 
 section:nth-child(2) {
     background-color: #cbd5e0;
@@ -63,11 +63,22 @@ section:nth-child(2) {
 
 section:nth-child(3) {
     background-color: #e2e8f0;
-    min-height: 300vh;
+    height: 300vh;
 }
 
 section:nth-child(4) {
     background-color: #fff;
+}
+
+hr {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border: none;
+    background-color: red;
+    width: 100%;
 }
 
 @media only screen and (min-width: 2500px) {
