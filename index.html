@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./app.css">
+        <script src="./app.js" defer></script>
+        <title>Spy screen</title>
+    </head>
+    <body>
+        <nav>
+            <script>
+                const nav = document.querySelector("nav")
+                for (let i = 1; i<= 4; i++) {
+                    const link = document.createElement("a")
+                    link.href = `#section${i}`
+                    link.text = `Section ${i}`
+                    nav.appendChild(link)
+                }
+                nav.removeChild(nav.querySelector("script"))
+            </script><a href="contact.html">Contact</a>
+        </nav>
+        <main>
+            <script>                
+                const main = document.querySelector("main")
+                console.log(main.children)
+                for (let i = 1; i<= 4; i++) {
+                    const section = document.createElement("section")
+                    section.id = `section${i}`
+                    section.textContent = `Section ${i}`
+                    main.appendChild(section)
+                   
+                }
+                main.removeChild(main.querySelector("script"))
+            </script>
+        </main>
+    </body>
+</html>
